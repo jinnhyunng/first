@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>메인 페이지</title>
+    <style>
+        #mainphoto {
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+         }
+    </style>
 </head>
 <body>
 <nav>
@@ -11,7 +18,12 @@
 </nav>
 {% extends 'base.html' %}
 {% block content %}
-<h1>메인 페이지입니다.</h1>
+<img src="https://image.oliveyoung.co.kr/uploads/images/display/90000020522/263/3735149281881765278.jpg" id="mainphoto" alt="올리브영 딜라이트 프로젝트">
+<br>
+<br>
+<h1>올리브영 Private Brand 딜라이트 프로젝트</h1>
+<h4>당신의 일상에 미소를 채워줄 수 있도록</h4>
+<h4>조금 더 나은 방식, 더 먹기 좋은 양, 보다 좋은 맛을 고민합니다.</h4>
 {% endblock %}
 </body>
 </html>
