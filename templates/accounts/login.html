@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>login</title>
+    <style>
+        #information{
+        text-align: center;
+        }
+        #login{
+        text-align: center;
+        }
+    </style>
 </head>
 <body>
 {% extends "base.html" %}
@@ -12,9 +20,9 @@
 <p>아이디 또는 비밀번호가 틀립니다. 다시 시도해주세요.</p>
 {% endif %}
 
-<form method="post" action="{% url 'accounts:login' %}">
+<form method="post" action="{% url 'accounts:login' %}" id="login">
 {% csrf_token %}
-<table>
+<table id="information">
 <tr>
     <td>{{ form.username.label_tag }}</td>
     <td>{{ form.username }}</td>

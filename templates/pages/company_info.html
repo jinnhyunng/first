@@ -3,6 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>회사소개</title>
+    <style>
+        body{
+        background-image: url('https://images.cj.net/images/cjBrand/oliveyoung/oliveyoung_info2.jpg');
+        }
+
+        #introduce{
+        text-align: center;
+        padding-top: 50px;
+        }
+
+        #NEWS{
+        text-align: center;
+        padding-top: 50px;
+        }
+
+
+
+
+       #NEWS > a { color: black; }
+       #NEWS > a:visited { color: black; }
+       #NEWS > a:hover { color: white; }
+       #NEWS > a:active { color: black; }
+
+       #NEWS > a {
+           font-size: 25px;
+          }
+
+
+
+    </style>
 </head>
 <body>
 <nav>
@@ -11,7 +41,32 @@
 </nav>
 {% extends 'base.html' %}
 {% block content %}
-<h1>회사소개 페이지입니다.</h1>
+<div id="introduce">
+    <h1>인사말</h1>
+    <br>
+    <h3>딜라이트 프로젝트는 올리브영의 건강 간식 Private Brand로</h3>
+    <h3>2021년 1월 출시 이래 베이글칩, 느타리버섯칩, 벌꿀약과, 명인부각 등</h3>
+    <h3>대표 제품을 중심으로 꾸준히 사랑받고 있는 브랜드입니다.</h3>
+    <h3>'간식 맛집'이라는 명성에 걸맞은 다양한 제품을 지속해 발굴해 나갈 것입니다.</h3>
+    <h3>올리브영 온라인/오프라인에서 구매하실 수 있습니다.</h3>
+</div>
+
+<div id="NEWS">
+    <br>
+
+        <h1>NEWS</h1>
+        <br>
+    <ul >
+        <li><a href="https://sports.khan.co.kr/bizlife/sk_index.html?art_id=202310051401003&sec_id=564001&pt=nv">간식맛집 올리브영? ‘딜라이트 프로젝트’ 3천만 봉 팔았다.</a></li>
+        <li><a href="https://www.theguru.co.kr/news/article.html?no=55075">올리브영, 日 간식시장 정조준…PB '딜라이트 프로젝트' 첫 상륙</a></li>
+        <li><a href="https://www.starnewskorea.com/stview.php?no=2022050208403616017">CJ올리브영 '딜라이트 프로젝트', 백설과 협업…'눈꽃 솜사탕&달고나'</a></li>
+    </ul>
+</div>
+<br>
+<br>
+<br>
+
+
 {% endblock %}
 </body>
 </html>
